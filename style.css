@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #ededed;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+
+}
+
+.insta_header {
+    background-color: white;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.header {
+    padding: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search {
+    text-align: center;
+    border: 1px solid #DBDBDB;
+    width: 208px;
+    height: 32px;
+    background: #FAFAFA;
+
+
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+
+    .grey {
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        background: #E6E6E6;
+
+
+    }
+}
+
+
+.new_stories {
+    width: 500px;
+    background-color: white;
+    padding: 16px;
+    display: flex;
+    gap: 25px;
+    text-align: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+}
+
+.insta_body {
+    display: flex;
+    gap: 24px;
+    position: relative;
+}
+
+.story {
+    flex-shrink: 0;
+    
+    
+   
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+}
+
+
+.posts_container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    flex: 3;
+    overflow-y: auto;
+}
+
+.new_posts {
+    width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+   
+}
+
+.user {
+    display: flex;
+    gap: 10px;
+}
+
+.main_post_info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post_data h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.post_data p {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+}
+
+.main_post_info {
+    padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.main_post_info a svg {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.main_pic {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    background-color: #efefef; /* для placeholder */
+}
+
+.reactions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.reactions .first_3 {
+    display: flex;
+    gap: 10px;
+}
+
+.reactions img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.post_body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.post_body p {
+    margin: 5px 0;
+}
+
+.post_body a {
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.body_comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body_comments .comment {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #262626;
+}
+
+.body_comments .likes {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.body_comments .likes img {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #dbdbdb;
+    margin: 10px 0;
+}
+
+.left {
+   
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+}
+.main {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+
+    img {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+       
+    }
+
+    p {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #0095F6;
+    }
+}
+
+.suggests {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #8E8E8E;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.recomended{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.recom_guys{
+    
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        transform: translateX(-35px);
+    }
+
+    p {
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        transform: translateX(-35px);
+    }
+
+    a {
+        text-decoration: none;
+        color: #0095F6;
+    }
+}
+
+
