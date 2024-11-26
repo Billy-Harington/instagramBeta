@@ -357,3 +357,132 @@ hr {
 }
 
 
+
+
+/* Общие настройки для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .insta_header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .new_stories {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .insta_body {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .posts_container {
+        margin: 10px 0;
+    }
+
+    .new_posts {
+        width: 100%;
+    }
+
+    .main_post_info img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main_pic {
+        height: auto;
+    }
+
+    .post_data h2 {
+        font-size: 12px;
+    }
+
+    .post_data p {
+        font-size: 10px;
+    }
+
+    .left {
+        width: 100%;
+        position: static;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .suggests {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .recomended .recom_guys {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .recomended .recom_guys img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .recomended .info h1 {
+        font-size: 12px;
+    }
+
+    .recomended .info p {
+        font-size: 10px;
+    }
+}
+
+/* Адаптация для очень маленьких экранов (менее 480px) */
+@media (max-width: 480px) {
+    .menu img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .new_stories img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .reactions img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .post_body p, 
+    .post_body a {
+        font-size: 10px;
+    }
+
+    .body_comments .likes img {
+        width: 12px;
+        height: 12px;
+    }
+}
+

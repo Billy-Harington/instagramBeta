@@ -11,6 +11,7 @@ export function Post(item) {
     const likes = document.createElement('div')
 
 
+
     const h2 = document.createElement('h2')
 
 
@@ -20,6 +21,7 @@ export function Post(item) {
     const p_comment = document.createElement('p')
 
 
+    
     const a_svg = document.createElement('a')
     const a_like = document.createElement('a')
     const a_share = document.createElement('a')
@@ -49,30 +51,30 @@ export function Post(item) {
     comment.classList.add('comment')
     likes.classList.add('likes')
 
+    h2.innerText = item.name
 
-    p_data.innerText = item.name
-    p_body_likes.innerText = `${Math.round(Math.random*10000000)} likes`
+    p_data.innerText = item.email
+    p_body_likes.innerText = `${Math.round(Math.random()*10000000)} likes`
     p_comment.innerText = `${item.name}  Lorem ipsum dolor sit amet`
     p_body_info.innerText = `${item.name}  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis... more`
 
     a_svg.href = "#"
-    a_svg.innerHTML = <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 13.5C12.8284 13.5 13.5 12.8284 13.5 12C13.5 11.1716 12.8284 10.5 12 10.5C11.1716 10.5 10.5 11.1716 10.5 12C10.5 12.8284 11.1716 13.5 12 13.5Z" fill="#262626"/>
-    <path d="M6.5 13.5C7.32843 13.5 8 12.8284 8 12C8 11.1716 7.32843 10.5 6.5 10.5C5.67157 10.5 5 11.1716 5 12C5 12.8284 5.67157 13.5 6.5 13.5Z" fill="#262626"/>
-    <path d="M17.5 13.5C18.3284 13.5 19 12.8284 19 12C19 11.1716 18.3284 10.5 17.5 10.5C16.6716 10.5 16 11.1716 16 12C16 12.8284 16.6716 13.5 17.5 13.5Z" fill="#262626"/>
-    </svg>;
+    
 
     a_like.href="#"
     a_view.href="#"
     a_share.href="#"
     a_save.href="#"
-    a_comment.href = ""
-    a_likes.href = ""
+    a_comment.href = "#"
+    a_likes.href = "#"
 
 
-    img_user.src = item.picture
+    img_user.src = item.thumbnailUrl
+
+    
+    
     img_user.alt = ""
-    img_main.src = item.picture
+    img_main.src = item.thumbnailUrl
     img_main.alt = ""
     img_main.classList.add('main_pic')
     img_comment.src = "../img/comment.png"
@@ -104,5 +106,7 @@ export function Post(item) {
     likes.append(a_likes)
     a_likes.append(img_like)
 
+    
+    
     return post
 }

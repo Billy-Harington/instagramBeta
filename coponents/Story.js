@@ -12,10 +12,11 @@ export function Story(item) {
 
     a.href = "#"
     a_nick.href = "#"
-    img.src = item
+    img.src = item.url
     img.alt = ""
+   
 
-    a_nick.innerText = item.name
+    a_nick.innerText = item.email
 
     story.append(story_box,story_text)
     story_box.append(a)

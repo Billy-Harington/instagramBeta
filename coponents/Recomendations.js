@@ -9,14 +9,15 @@ export function Recomendations(item) {
     recom_guys.classList.add("recom_guys")
     info.classList.add('info')
 
-    img.src = item.picture
+    img.src = item.url
     img.alt = ""
+ 
 
     a.href = ""
     a.innerText = "switch"
 
-    h1.innerText = `@${item.name}`
-    p.innerText = `${item.name} ${item.surname}`
+    h1.innerText = `@${item.email}`
+    p.innerText = `${item.name} `
 
 
     recom_guys.append(img,info,a)
